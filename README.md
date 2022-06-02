@@ -4,13 +4,13 @@
 
 Plagiarism is a widespread issue in today's age of information. The extent of it can also vary from minor modification to outright copying. The task of finding similiar documents has some pitfalls.
 
-* Brute-force comparison requires $O(n^2)$ comparisons which is not feasible if $n$ is large. 
-* We need to account for word ordering since small pieces of a document can appear out of order in another document.
+* Brute-force comparison requires $O(n^2)$ comparisons which is not feasible if $n$ is large
+* We need to account for word ordering since small pieces of a document can appear out of order in another document
 * If the documents are large, they will not fit in main memory
 
-#Solution
+## Solution
 
-* Represent documents as sets of n-grams to account for word-ordering
+* Represent documents as sets of $n$-grams to account for word-ordering
 * Use Min Hashing to convert sets into short signatures which fit in main memory
 * Use Locality Sensitive Hashing to generate a small set of candidate pairs for comparison
 
